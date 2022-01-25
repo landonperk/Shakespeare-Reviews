@@ -1,10 +1,33 @@
-# Getting Started with Create React App
+# Shakespeare Reviews - Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Built by Landon Perkins
 
+Along with displaying the reviews, I also thought it would be interesting if the plays that the reviews were about were also represented in some way on the website as well.
+
+There is a JSON file stored at ```src/data/playData.json``` that holds the titles and images that are used to represent the plays.
+
+There isn't any condition the reviews need meet for them to be assigned to a play. It's completely random, and has nothing to do with the text in the review.
+
+I had a great time building this! I hope you enjoy!
+
+## Other features
+
+### Sort Reviews
+You are able to sort through the reviews by "Highest Rated", "Lowest Rated", "Newest" and "Oldest".
+
+### Average Play Rating
+After all the reviews have been assigned to a play an average rating is calculated and displayed as a star rating.
+
+### Show Play Reviews
+You are able to see the reviews of any Shakespeare play by clicking the "Show Reviews" buttons.
+
+---------------------------------------------------------------------------------------------------------------
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+This will install the required node modules.
 
 ### `npm start`
 
@@ -19,52 +42,68 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---------------------------------------------------------------------------------------------------------------
+# Front End Coding Assessment Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+It’s worth mentioning that we care about testing our code here at Podium, and it would be beneficial for you to demonstrate how you test in the challenge as well.
 
-### `npm run eject`
+Shakespeare has been getting a lot of reviews recently about his plays. So far he has managed to build a backend API to serve them, but he doesn’t have the chops to finish out the UI. That’s where you come in, your task is to build a client side app for Shakespeare’s API. The **design** of the application is up to you.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### API Documentation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Authentication:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Authentication is done by passing your API token using the **x-api-key** header. The value of this header will contain nothing more than just the token value.
+- Your authentication token is: ```H3TM28wjL8R4#HTnqk?c```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Endpoints:**
 
-## Learn More
+Two endpoints exist for this API.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Reviews Index**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - **GET** [https://shakespeare.podium.com/api/reviews](https://shakespeare.podium.com/api/reviews)
+    - Response looks like this:
+```
+  [
+    {
+        "rating": 0.8,
+        "publish_date": "2016-09-05T23:25:47.642350Z",
+        "id": "9783221620868",
+        "body": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+        "author": "Kaley Schiller"
+    },
+    {
+        "rating": 3.2,
+        "publish_date": "2016-09-04T23:25:47.642388Z",
+        "id": "9793364045824",
+        "body": "Can one desire too much of a good thing?.",
+        "author": "Fay Lemke"
+    },
+    {
+        "rating": 4.1,
+        "publish_date": "2016-09-03T23:25:47.642545Z",
+        "id": "9784620626604",
+        "body": "How bitter a thing it is to look into happiness through another man's eyes!",
+        "author": "Tatyana Olson"
+    }
+]
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Reviews Show**
 
-### Analyzing the Bundle Size
+    - **GET** [https://shakespeare.podium.com/api/reviews/:id](https://shakespeare.podium.com/api/reviews/:id)
+    - Response looks like this:
+```
+{
+    "rating": 0.8,
+    "publish_date": "2016-09-05T23:25:47.642350Z",
+    "id": "9783221620868",
+    "body": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+    "author": "Kaley Schiller"
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
