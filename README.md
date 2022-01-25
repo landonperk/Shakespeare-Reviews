@@ -26,6 +26,9 @@ You are able to see the reviews of any Shakespeare play by clicking the "Show Re
 
 In the project directory, you can run:
 
+### `npm install`
+This will install the required node modules.
+
 ### `npm start`
 
 Runs the app in the development mode.\
