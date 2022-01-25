@@ -1,113 +1,187 @@
-{
-    "All's Well That Ends Well": {
+[
+    {
+        "title": "All's Well That Ends Well",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/alls-well-hero.jpg"
     },
-    "Antony and Cleopatra": {
+    {
+        "title": "Antony and Cleopatra",
+        "reviews": [],
         "img": "https://i0.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/02/Antony-and-Cleopatra-hero_2.jpg"
     },
-    "As You Like It": {
+    {
+        "title": "As You Like It",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/as-you-like-it-hero.jpg"
     },
-    "Comedy of Errors": {
+    {
+        "title": "Comedy of Errors",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/comedy-of-errors-hero.jpg"
     },
-    "Coriolanus": {
+    {
+        "title": "Coriolanus",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Coriolanus-hero.jpg"
     },
-    "Cymbeline": {
+    {
+        "title": "Cymbeline",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Cymbeline-hero.jpg"
     },
-    "Hamlet": {
+    {
+        "title": "Hamlet",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Hamlet-final-hero.jpg"
     },
-    "Henry IV, Part I": {
+    {
+        "title": "Henry IV, Part I",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Henry-IV-part-1-hero.jpg"
     },
-    "Henry IV, Part II": {
+    {
+        "title": "Henry IV, Part II",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Henry-IV-part-2-hero.jpg"
     },
-    "Henry V": {
+    {
+        "title": "Henry V",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Henry-V-hero.jpg"
     },
-    "Henry VI, Part I": {
+    {
+        "title": "Henry VI, Part I",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Henry-VI-part-1-hero.jpg"
     },
-    "Henry VI, Part II": {
+    {
+        "title": "Henry VI, Part II",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Henry-VI-part-2-hero.jpg"
     },
-    "Henry VI, Part III": {
+    {
+        "title": "Henry VI, Part III",
+        "reviews": [],
         "img": "https://i2.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Henry-VI-part-3-hero.jpg"
     },
-    "Henry VIII": {
+    {
+        "title": "Henry VIII",
+        "reviews": [],
         "img": "https://i0.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Henry-VIII-hero.jpg"
     },
-    "Julius Caesar": {
+    {
+        "title": "Julius Caesar",
+        "reviews": [],
         "img": "https://i0.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Julius-Caesar-hero.jpg"
     },
-    "King John": {
+    {
+        "title": "King John",
+        "reviews": [],
         "img": "https://i0.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/King-John-hero.jpg"
     },
-    "King Lear": {
+    {
+        "title": "King Lear",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/King-Lear-hero.jpg"
     },
-    "Love's Labour's Lost": {
+    {
+        "title": "Love's Labour's Lost",
+        "reviews": [],
         "img": "https://i0.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/loves-labors-lost-hero.jpg"
     },
-    "Macbeth": {
+    {
+        "title": "Macbeth",
+        "reviews": [],
         "img": "https://i2.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Macbeth-final-hero.jpg"
     },
-    "Measure for Measure": {
+    {
+        "title": "Measure for Measure",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/measure-for-measure-hero.jpg"
     },
-    "Merchant of Venice": {
+    {
+        "title": "Merchant of Venice",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/merchant-of-venice-hero.jpg"
     },
-    "Merry Wives of Windsor": {
+    {
+        "title": "Merry Wives of Windsor",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/merry-wives-hero.jpg"
     },
-    "Midsummer Night's Dream": {
+    {
+        "title": "Midsummer Night's Dream",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Midsummer-final-hero.jpg"
     },
-    "Much Ado about Nothing": {
+    {
+        "title": "Much Ado about Nothing",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Much-Ado-final-hero.jpg"
     },
-    "Othello": {
+    {
+        "title": "Othello",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Othello-final-hero-image.jpg"
     },
-    "Pericles": {
+    {
+        "title": "Pericles",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Pericles-hero.jpg"
     },
-    "Richard II": {
+    {
+        "title": "Richard II",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Richard-II-hero.jpg"
     },
-    "Richard III": {
+    {
+        "title": "Richard III",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Richard-III-hero.jpg"
     },
-    "Romeo and Juliet": {
+    {
+        "title": "Romeo and Juliet",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Romeo-and-Juliet-final-hero.jpg"
     },
-    "Taming of the Shrew": {
+    {
+        "title": "Taming of the Shrew",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/taming-of-the-shrew-hero-1.jpg"
     },
-    "Tempest": {
+    {
+        "title": "Tempest",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Tempest-final-hero-image.jpg"
     },
-    "Timon of Athens": {
+    {
+        "title": "Timon of Athens",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Timon-of-Athens-hero.jpg"
     },
-    "Titus Andronicus": {
+    {
+        "title": "Titus Andronicus",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Titus-Andronicus-hero.jpg"
     },
-    "Troilus and Cressida": {
+    {
+        "title": "Troilus and Cressida",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/Troilus-and-Cressida-hero.jpg"
     },
-    "Twelfth Night": {
+    {
+        "title": "Twelfth Night",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/twelfth-night-hero.jpg"
     },
-    "Two Gentlemen of Verona": {
+    {
+        "title": "Two Gentlemen of Verona",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/two-gentlemen-of-verona-hero.jpg"
     },
-    "Winter's Tale": {
+    {
+        "title": "Winter's Tale",
+        "reviews": [],
         "img": "https://i1.wp.com/shakespeare.folger.edu/wp-content/uploads/2020/01/winters-tale-hero.jpg"
     }
-}
+]

@@ -3,22 +3,21 @@ import * as filterReviews from "../../helperFunctions/filterData";
 import Review from "./Review";
 import FilterDropDown from "./FilterDropDown";
 import Pagination from "./Pagination";
-import { useGetReviewData } from "../../hooks/useGetReviewData";
 export const PaginationContext = createContext();
 
-const ReviewPages = () => {
-	const [reviewData, setReviewData] = useGetReviewData();
+const ReviewPages = ({ reviewData }) => {
 	const [curPage, setCurPage] = useState(0);
 
-	if (!reviewData) {
-		return <div>Loading</div>;
-	}
-	const reviewsByPage = filterReviews.intoPages(reviewData);
+	const reviewsByPage = filterReviews.intoPages(reviewData.get);
 	const maxPages = reviewsByPage.length;
 
+	if (reviewData.get.length === 0) {
+		return <h1>No Reviews Here</h1>;
+	}
+
 	return (
-		<div>
-			<FilterDropDown data={reviewData} set={setReviewData} />
+		<div aria-label="reviewPages">
+			<FilterDropDown data={reviewData.get} set={reviewData.set} />
 			{reviewsByPage[curPage].map((e) => (
 				<Review info={e} key={e.id} />
 			))}

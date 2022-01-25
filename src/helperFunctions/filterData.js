@@ -1,5 +1,5 @@
 export const intoPages = (reviewData) => {
-	const NUMBER_OF_REVIEWS_ON_A_PAGE = 7;
+	const NUMBER_OF_REVIEWS_ON_A_PAGE = 4;
 	let pages = [[]];
 
 	for (let curReview in reviewData) {
@@ -9,7 +9,6 @@ export const intoPages = (reviewData) => {
 			pages.push([]);
 		}
 	}
-	console.log(pages);
 	return pages;
 };
 
@@ -67,4 +66,30 @@ export const byOldest = (data, set) => {
 		}
 	}
 	set(sortedData);
+};
+
+export const assignReviews = (data, reviews) => {
+	const reviewsClone = [...reviews];
+
+	while (reviewsClone.length > 0) {
+		const randomReview = Math.floor(Math.random() * reviewsClone.length - 1) + 1;
+		const randomPlay = Math.floor(Math.random() * data.length - 1) + 1;
+
+		data[randomPlay].reviews = [...data[randomPlay].reviews, reviewsClone[randomReview]];
+		reviewsClone.splice(randomReview, 1);
+	}
+
+	return data;
+};
+
+export const getAverageRating = (reviews) => {
+	if (reviews.length) {
+		let averageRating = 0;
+		for (let i of reviews) {
+			averageRating += i.rating;
+		}
+		averageRating /= reviews.length;
+
+		return averageRating;
+	}
 };

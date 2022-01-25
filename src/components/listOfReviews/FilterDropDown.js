@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { byHighestRated, byLowestRated, byNewest, byOldest } from "../../helperFunctions/filterData";
 
 const FilterDropDown = ({ data, set }) => {
-	const [selectedFilter, setSelectedFilter] = useState("highest rated");
 	const filterHandlers = { "Highest Rated": byHighestRated, "Lowest Rated": byLowestRated, Newest: byNewest, Oldest: byOldest };
 
 	const handleChange = (event) => {

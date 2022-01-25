@@ -15,3 +15,11 @@ body {
 .Play {
 	transition: 0.1s;
 }
+
+.header {
+	box-shadow: 0px 0px 10px grey inset;
+}
+
+.main {
+	color: #55c778;
+}

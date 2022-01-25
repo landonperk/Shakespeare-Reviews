@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { byHighestRated } from "../helperFunctions/filterData";
 
 export const useGetReviewData = () => {
-	const [reviewData, setReviewData] = useState(null);
+	const [get, set] = useState(null);
 
 	useEffect(() => {
 		fetch("https://shakespeare.podium.com/api/reviews", { headers: { "x-api-key": "H3TM28wjL8R4#HTnqk?c" } })
 			.then((res) => res.json())
 			.then((data) => {
-				byHighestRated(data, setReviewData);
+				byHighestRated(data, set);
 			});
 	}, []);
-	return [reviewData, setReviewData];
+	return { get, set };
 };
