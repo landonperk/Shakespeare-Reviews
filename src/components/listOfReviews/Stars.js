@@ -7,22 +7,10 @@ const Stars = ({ rating, id }) => {
 	let numberOfStars = parseFloat(rating);
 	let starList = [];
 
-	if (numberOfStars < 0.5) {
-		starList.push(
-			<span key={id + numberOfStars}>
-				<IconContext.Provider value={startValue}>
-					<BsStar />
-				</IconContext.Provider>
-			</span>
-		);
-	}
-
 	while (numberOfStars >= 1) {
 		starList.push(
 			<span key={id + numberOfStars}>
-				<IconContext.Provider value={startValue}>
-					<BsStarFill />
-				</IconContext.Provider>
+				<BsStarFill />
 			</span>
 		);
 		numberOfStars--;
@@ -30,14 +18,22 @@ const Stars = ({ rating, id }) => {
 	if (numberOfStars >= 0.5) {
 		starList.push(
 			<span key={id + numberOfStars}>
-				<IconContext.Provider value={startValue}>
-					<BsStarHalf />
-				</IconContext.Provider>
+				<BsStarHalf />
 			</span>
 		);
 	}
-
-	return <div className="Stars level-right">{starList}</div>;
+	if (!starList.length) {
+		starList.push(
+			<span key={id + numberOfStars}>
+				<BsStar />
+			</span>
+		);
+	}
+	return (
+		<div className="Stars level-right">
+			<IconContext.Provider value={startValue}>{starList}</IconContext.Provider>
+		</div>
+	);
 };
 
 export default Stars;
