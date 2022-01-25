@@ -1,4 +1,4 @@
-# Shakespeare Reviews - Podium Code Challenge
+# Shakespeare Reviews - Code Challenge
 
 ## Built by Landon Perkins
 
