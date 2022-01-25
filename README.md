@@ -2,9 +2,9 @@
 
 ## Built by Landon Perkins
 
-Along with displaying the reviews, I also thought it would be interesting if the plays that the reviews were about where also represented in some way on the website as well.
+Along with displaying the reviews, I also thought it would be interesting if the plays that the reviews were about were also represented in some way on the website as well.
 
-There is a JSON file stored at ```src/data/playData.json``` that holds the titles and links to images that are used to represent the plays.
+There is a JSON file stored at ```src/data/playData.json``` that holds the titles and images that are used to represent the plays.
 
 There isn't any condition the reviews need meet for them to be assigned to a play. It's completely random, and has nothing to do with the text in the review.
 
@@ -16,7 +16,7 @@ I had a great time building this! I hope you enjoy!
 You are able to sort through the reviews by "Highest Rated", "Lowest Rated", "Newest" and "Oldest".
 
 ### Average Play Rating
-After all the reviews have been assigned a play an average rating is calculated and displayed as a star rating
+After all the reviews have been assigned to a play an average rating is calculated and displayed as a star rating.
 
 ### Show Play Reviews
 You are able to see the reviews of any Shakespeare play by clicking the "Show Reviews" buttons.
