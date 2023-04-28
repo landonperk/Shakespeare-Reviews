@@ -6,7 +6,7 @@ Along with displaying the reviews, I also thought it would be interesting if the
 
 There is a JSON file stored at ```src/data/playData.json``` that holds the titles and images that are used to represent the plays.
 
-There isn't any condition the reviews need meet for them to be assigned to a play. It's completely random, and has nothing to do with the text in the review.
+There isn't any condition the reviews need to meet for them to be assigned to a play. It's completely random, and has nothing to do with the text in the review.
 
 I had a great time building this! I hope you enjoy!
 
